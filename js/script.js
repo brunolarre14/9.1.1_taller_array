@@ -39,7 +39,9 @@ function showList(array) {
 document.addEventListener("DOMContentLoaded", (e) => {
   // Escribe tu solución aquí
   // Sugerencia de cómo mostrar el array => showList(strangeArray);
+  
   const arrayFiltrado = strangeArray.filter(item => typeof item === 'string');
-  arrayFiltrado.sort()
+  arrayFiltrado.sort((a , b) => a.toLowerCase().localeCompare(b.toLowerCase()))
   showList(arrayFiltrado)
+  
 })
